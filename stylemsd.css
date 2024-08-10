@@ -1,0 +1,302 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #d4a304;
+    color: white;
+    /* padding: 25px ;
+    margin-bottom: 0px; */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 2000px;
+    /* margin: 0 auto;
+    padding:0 20px; */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+main {
+    
+    /* margin: 0px; */
+    /* padding: 10px; */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    /* margin-bottom: 40px; */
+    position: relative;
+    text-align: left;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+}
+
+.introduction-mission::before {
+    background-image: url('https://images.unsplash.com/photo-1488998628026-a1a79746cdcd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1ldHJvJTIwc3RhdGlvbnxlbnwwfHwwfHx8MA%3D%3D');
+    content-visibility:hidden;
+}
+
+.services::before {
+    background-image: url('https://media.istockphoto.com/id/503588918/photo/kuala-lumper-skyline-at-twilight.webp?b=1&s=170667a&w=0&k=20&c=NP70Pg0ldse8rvgIZPcQD2X68i08T-E3kRmbkwst0nw=');
+}
+
+.about::before {
+    background-image: url('https://plus.unsplash.com/premium_photo-1668875378762-9967884ecc41?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG1vcm5pbmclMjBza3l8ZW58MHx8MHx8fDA%3D');
+}
+
+.introduction-mission, .services, .about, .contact {
+    margin-bottom: 0px;
+    color: rgb(32, 30, 30);
+    /* padding: 40px;
+    margin-bottom: 20px;
+    color: rgb(32, 30, 30);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    overflow: hidden; */
+
+}
+
+.introduction-mission {
+    background-color: rgba(0, 90, 146, 0.8);
+    padding: 50px;
+    color: rgb(32, 30, 30);
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 50px;
+    align-items: end; 
+}
+
+.introduction {
+    /* background-color:white;
+    color: black;
+    border-radius: 10px;
+    padding: 20px; */
+        background-color: white;
+        color: black;
+        border-radius: 0 50% 50% 0 / 0 100% 100% 0;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-left: -9.4%;
+        width: 100%;
+        height:100%;
+        position: relative;
+        z-index: 1;
+}
+.mission {
+    
+    color: white;
+    border-radius: 10px;
+    
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "img content"; 
+    align-items: center;
+    gap: 50px;
+    background-color: rgb(248, 56, 56);
+    padding: 50px;
+}
+
+.services img {
+    grid-area: img; 
+    max-width: 100%;
+    border-radius: 0px;
+}
+
+
+.services .service-content {
+    grid-area: content; 
+    background-color: white;
+    color: #333;
+    border-radius: 50% 0 0 50% / 100% 0 0 100%;
+    padding: 20px;
+    margin-left:  2%; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: right;
+    position: relative; 
+    z-index: 1;
+    height:100%;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    padding: 20px;
+    
+
+}
+
+
+.about-content,.service-content {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.about img {
+    max-width: 80%;
+    border-radius: 0px;
+    margin-left: 15%;
+    /* grid-area: img; */
+}
+
+.about-content {
+
+    background-color: white;
+    color: black;
+    border-radius: 0 50% 50% 0 / 0 100% 100% 0;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-left: -3.5%; 
+    width: 90%;
+    height:70%;
+    position: relative;
+    z-index: 1;
+}
+ .services img{
+    margin-left:0%;
+ }
+
+
+.about {
+    background-color: rgba(128, 128, 128, 0.73);
+}
+
+.contact {
+    background-color: darkcyan;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.contact-info {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "img content"; 
+    align-items: center;
+    gap: 50px;
+    background-color: darkcyan;
+    padding: 50px;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    background-color: darkcyan;
+}
+
+.contact .contact-form input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+   background-color: rgb(184, 169, 169);
+   
+    box-sizing: border-box;
+}
+.contact .contact-form textarea{
+    width: 95%;
+    padding: 20px;
+    background-color: rgb(184, 169, 169);
+    
+}
+.contact .contact-info {
+    grid-area: content; 
+    background-color: white;
+    color: #333;
+    border-radius: 50% 0 0 50% / 100% 0 0 100%;
+    padding: 20px;
+    margin-left: 2.3%;    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: right;
+    position: relative; 
+    z-index: 1;
+    height:70%;
+}
+
+.contact .contact-form button {
+    padding: 10px 20px;
+    background-color: gray;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #d4a304;
+    text-align: center;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 30px;
+}
+
+footer p {
+    margin: 90;
+    text-align: center;
+    margin-left: 35%;
+
+}
